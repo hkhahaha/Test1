@@ -3,29 +3,23 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>test local</title>
-		<script type="text/javascript">
-			(function() {
-				var _log = console.log;
-				console.log = function() {
-					if (typeof(arguments[0]) != 'object' && typeof(arguments[0]) != 'function' && arguments.length == 1) {
-						_log.call(console, '%c' + arguments[0],
-							"text-shadow: 0 1px 0 #ccc,0 2px 0 #c9c9c9,0 3px 0 #bbb,0 4px 0 #b9b9b9,0 5px 0 #aaa,0 6px 1px rgba(0,0,0,.1),0 0 5px rgba(0,0,0,.1),0 1px 3px rgba(0,0,0,.3),0 3px 5px rgba(0,0,0,.2),0 5px 10px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.2),0 20px 20px rgba(0,0,0,.15);font-size:5em"
-						)
-					} else {
-						_log.call(console, ...arguments)
-					}
-				}
-			})()
-		</script>
+		<title>测试内容</title>
 	</head>
 	<body>
-		<h1>test1</h1>
-		<script>
-			c = 12;
-			a = 123;
-			b = a + c;
-			console.log(b);
+		<button onclick="winTest()">按钮</button>
+		<script type="text/javascript">
+			function winTest(){
+				
+			
+			var text1="this is a windows";
+			var text2="this is a text"
+			document.open("text/html","replace");
+			document.writeln(text1);
+			document.writeln(text2);
+			document.writeln(text2);
+			document.close();
+			}
 		</script>
 	</body>
+	
 </html>
